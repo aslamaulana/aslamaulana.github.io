@@ -1,469 +1,204 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-      <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-      <!-- preloading fonts and whatnot -->
-      <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-      <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-      <!--<script rel="preconnect" src="https://kit.fontawesome.com/349947908d.js" crossorigin="anonymous"></script>-->
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
-      <!--=============== CSS ===============-->
-      <link rel="preload stylesheet" href="assets/css/styles.css">
-
-      <!-- cloudflare turnstile -->
-      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-
-      <title>Asla Maulana</title>
-
-      <style>
-         html {
-            visibility: hidden;
-            opacity: 0;
-         }
-      </style>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">A</span>
-                <span class="nav__logo-name">Asla Maulana.</span>
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-               <span class = "nav__title">Menu</span>
-
-               <h3 class="nav__name">Garrett</h3>
-
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link active-link">home.</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">about me.</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#traktir" class="nav__link">traktir.</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#projects" class="nav__link">projects.</a>
-                  </li>
-               </ul>
-
-               <!-- close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-
-            <div class="nav__buttons">
-               <!-- theme toggle button -->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-               <!-- toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-4-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <h1 class="home__name">
-                  Garrett Boling.
-               </h1>
-               <div class="home__perfil">
-                  <div class="home__image">
-                     <img src="assets/img/home-perfil.webp" alt="Portrait image of Garrett Boling" class="home__img">
-                     <div class="home__shadow"></div>
-
-                     <img src="assets/img/curved-arrow.svg" alt="curved arrow" class="home__arrow">
-                     <img src="assets/img/random-lines.svg" alt="random lines" class="home__line">
-
-                     <div class="geometric-box"></div>
-                  </div>
-
-                  <div class="home__social">
-                     <a href="https://www.instagram.com/garrett.boling1212" target="_blank" class="home__social-link" aria-label="Instagram">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-
-                     <a href="https://www.linkedin.com/in/garrett-boling-04174b196/" target="_blank" class="home__social-link" aria-label="LinkedIn">
-                        <i class="ri-linkedin-box-line"></i>
-                     </a>
-
-                     <a href="https://github.com/smonk333" target="_blank" class="home__social-link" aria-label="GitHub">
-                        <i class="ri-github-line"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="home__info">
-                  <p class="home__description">
-                     <b>Backend developer</b> with experience in Python, Rust, C, and C++.
-                  </p>
-
-                  <a href="#about" class="home__scroll">
-                     <div class="home__scroll-box">
-                        <i class="ri-arrow-down-s-line"></i>
-                     </div>
-
-                     <span class="home__scroll-text">scroll down</span>
-                  </a>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <h2 class="section__title-1">
-                  about me.
-               </h2>
-
-               <div class="about__perfil">
-                  <div class="about__image">
-                     <img src="assets/img/about-perfil.webp" alt="Profile image" class="about__img" loading="lazy">
-
-                     <div class="about__shadow"></div>
-                     <div class="geometric-box"></div>
-                     <img src="assets/img/random-lines.svg" alt="random lines" class="about__line">
-                     <div class="about__box"></div>
-                  </div>
-               </div>
-
-               <div class="about__info">
-                  <p class="about__description">
-                     I'm a recent Clemson graduate with a Bachelor's of Arts in Computer Science, and a minor in
-                     Psychology.
-                  </p>
-
-                  <h3>Some things I'm passionate about are:</h3>
-
-                  <ul class="about__list">
-                     <li class="about__item">
-                        Treatment of psychological disorders
-                     </li>
-                     <li>
-                        Data science and machine learning
-                     </li>
-                     <li>
-                        Research on the use of Psychedelics in the treatment of anxiety/depression
-                     </li>
-                  </ul>
-
-                  <div class="about__buttons">
-                     <a href="#contact" class="button">
-                        <i class="ri-send-plane-line"></i> contact me.
-                     </a>
-
-                     <a href="https://www.linkedin.com/in/garrett-boling-04174b196/" target="_blank" class="button__ghost">
-                        <i class="ri-linkedin-box-line"></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section" id="traktir">
-            <h2 class="section__title-2">
-               <span>Traktir.</span>
-            </h2>
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <h2>saweria</h2>
-                     </div>
-                        <p class="services__description">
-                           <a href="https://saweria.co/aslamaulana">link saweria<i class="ri-link"></i></a>
-                        </p>
-                        <br>
-                            <img src="assets/img/traktir/saweria.png" alt="deskripsi" /> 
-                  </div>
-               </article>
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <!-- <div class="services__box"></div> -->
-                        <img src="assets/img/traktir/Logo_QRIS.webp" style="width: 80px;" alt="Qris">
-                     </div>
-                        <p class="services__description">
-                           Asla Maulana
-                        </p>
-                        <br>
-                            <img src="assets/img/traktir/qris.jpg" alt="deskripsi" /> 
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            <h2 class="section__title-1">
-               <span>projects.</span>
-            </h2>
-
-            <div class="projects__container container grid">
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/arrows.png" alt="project 1" class="projects__img" loading="lazy">
-                     <!--<a href="https://www.flaticon.com/free-icons/compress" title="compress icons">Compress icons created by Creatype - Flaticon</a>-->
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">a VST3 compressor plugin</h3>
-                     <h2 class="projects__title">Pressed</h2>
-
-                     <p class="projects__description">
-                        A VST3 compressor plugin that I wrote in C++ using the PampleJUCE/JUCE framework. This is my
-                        first attempt at writing a VST3 plugin.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-1.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 1</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-2.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 1</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-3.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 1</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-1.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 1</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-1.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 1</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-2.jpg" alt="project 1" class="projects__img" loading="lazy">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">project 331234124</h3>
-                     <h2 class="projects__title">project 1 again</h2>
-
-                     <p class="projects__description">
-                        waffle waffle waffle
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> view
-                     </a>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-      </main>
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <ul class="footer__links">
-               <li>
-                  <a href="#about" class="footer__link">about</a>
-               </li>
-
-               <li>
-                  <a href="#traktir" class="footer__link">traktir</a>
-               </li>
-
-               <li>
-                  <a href="#projects" class="footer__link">projects</a>
-               </li>
-            </ul>
-
-            <span class="footer__copy">
-               &#169;template designed by Bedimcode</a>
-            </span>
-         </div>
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-s-line"></i>
-      </a>
-
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="/assets/js/scrollreveal.min.js"></script>
-      
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-
-      <script>
-         window.addEventListener('load', () => {
-            setTimeout(() => {
-               document.documentElement.style.visibility = 'visible';
-               document.documentElement.style.opacity = '1';
-            }, 100)
-         });
-      </script>
-      <noscript>
-         <style>
-            html {
-               visibility: visible;
-               opacity: 1;
-            }
-         </style>
-         <p>Please enable JavaScript to view this website.</p>
-      </noscript>
-   </body>
+<html lang="id">
+<head>
+  <!-- BASIC META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO META -->
+  <title>Asla Maulana – Kreator Konten Mancing Micro Casting Indonesia</title>
+  <meta name="description" content="Asla Maulana adalah kreator konten mancing micro casting Indonesia. Aktif di TikTok dan Instagram dengan video strike muara, sungai, dan laut.">
+  <meta name="keywords" content="Asla Maulana, mancing, micro casting, micro fishing, mancing muara, mancing laut, mancing sungai, fishing Indonesia">
+  <meta name="author" content="Asla Maulana">
+
+  <!-- OPEN GRAPH (SOSIAL MEDIA PREVIEW) -->
+  <meta property="og:title" content="Asla Maulana – Konten Mancing Micro Casting">
+  <meta property="og:description" content="Konten mancing micro casting di muara, sungai, dan laut. Follow TikTok, Instagram & YouTube Asla Maulana.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aslamaulana.github.io">
+
+  <!-- CSS STYLE -->
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --dark: #1c1c1c;
+      --light: #f9f9f9;
+      --gray: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .bio {
+      font-size: 1.05rem;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #084298;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .video-card p {
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #fff;
+    }
+  </style>
+
+  <!-- SCHEMA PERSON (SEO KUAT) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Asla Maulana",
+    "url": "https://aslamaulana.github.io",
+    "sameAs": [
+      "https://www.tiktok.com/@aslamaulana",
+      "https://www.instagram.com/aslamaulana",
+      "https://www.youtube.com/@aslamaulana"
+    ],
+    "description": "Kreator konten mancing micro casting Indonesia"
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <h1>Asla Maulana</h1>
+  <p>Kreator Konten Mancing • Micro Fishing • Micro Casting • Indonesia</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <p class="bio">
+      Asla Maulana adalah kreator konten mancing dari Indonesia yang
+      berfokus pada teknik <strong>micro casting</strong> di muara,
+      sungai, dan laut. Konten dibagikan secara konsisten melalui
+      TikTok, Instagram dan YouTube dengan menampilkan strike-strike yang menarik,
+      spot alami, dan pengalaman memancing nyata.
+    </p>
+  </section>
+
+  <section>
+    <h2>Media Sosial Resmi</h2>
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@aslamaulana" target="_blank">TikTok @aslamaulana</a>
+      <a href="https://www.instagram.com/aslamaulana" target="_blank">Instagram @aslamaulana</a>
+      <a href="https://www.youtube.com/@aslamaulana" target="_blank">YouTube @aslamaulana</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Video Mancing Pilihan</h2>
+    <div class="videos">
+
+      <!-- VIDEO CARD 1 -->
+      <div class="video-card">
+        <h3>Strike Micro Casting di Muara</h3>
+        <p>Strike ikan di muara menggunakan teknik micro casting dengan joran ultralight.</p>
+        <!-- NANTI BISA TAMBAH EMBED -->
+      </div>
+
+      <!-- VIDEO CARD 2 -->
+      <div class="video-card">
+        <h3>Mancing Spot Sepi</h3>
+        <p>Spot jarang pemancing tapi menghasilkan strike brutal.</p>
+      </div>
+
+      <!-- VIDEO CARD 3 -->
+      <div class="video-card">
+        <h3>Tarikan Bikin Deg-degan</h3>
+        <p>Tarikan ikan yang hampir membuat senar putus.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © <span>Asla Maulana</span> • Konten Mancing Indonesia
+</footer>
+
+</body>
 </html>
