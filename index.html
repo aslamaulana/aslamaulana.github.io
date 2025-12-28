@@ -121,16 +121,27 @@
       color: #fff;
     }
 
-.tiktok-wrapper {
-  max-width: 320px;
-  margin: 0 auto;
-}
+    .tiktok-wrapper {
+    width: 100%;
+    max-width: 280px;          /* ukuran kartu */
+    aspect-ratio: 9 / 16;      /* RASIO VIDEO TIKTOK */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    }
 
-.tiktok-wrapper iframe,
-.tiktok-wrapper blockquote {
-  max-width: 100% !important;
-  min-width: unset !important;
-}
+    /* SCALE EMBED */
+    .tiktok-wrapper blockquote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    transform-origin: center;
+    min-width: unset !important;
+    max-width: unset !important;
+    }
+
 
   </style>
 
